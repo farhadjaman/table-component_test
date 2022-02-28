@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto',sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+table {
+  width: 80vw;
+  font-size: 18px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 16px 24px;
+  text-align: left;
+}
+
+thead th {
+  color: white;
+  background-color: #087f5b;
+  width: 25%;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgba(52, 58, 64, 0.1);
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(52, 58, 64, 0.3);
+}
+/*# sourceMappingURL=style.css.map */

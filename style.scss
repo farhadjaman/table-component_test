@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap'); 
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+$primary_clr:#087f5b;
+$secondary_clr:#343a40;
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    align-items: center;
+    justify-content:center ;
+    height: 100vh;
+    overflow: hidden;
+}
+table{
+    width:80vw;
+   font-size: 18px;
+    border-collapse:collapse;
+}
+th,td{
+    //border: 1px solid $secondary_clr;
+    padding:16px 24px;
+    text-align: left;
+}
+thead th{
+    color: white;
+    background-color: $primary_clr;
+    width: 25%;
+}
+tbody tr:nth-child(odd){
+    background-color: rgba($secondary_clr,0.1);
+}
+tbody tr:nth-child(even){
+    background-color: rgba($secondary_clr,0.3);
+}
